@@ -15,6 +15,9 @@ public class Demo {
 
         Part4.main(new String[]{"1326","390"});
         System.out.print("\n\n");
+
+        Part5.main(new String[]{"12","32","76","54"});
+        System.out.print("\n\n");
     }
 
 }
