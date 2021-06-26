@@ -12,6 +12,9 @@ public class Demo {
 
         Part3.main(new String[]{"10","3","11"});
         System.out.print("\n\n");
+
+        Part4.main(new String[]{"1326","390"});
+        System.out.print("\n\n");
     }
 
 }
