@@ -15,7 +15,9 @@ public class Part6 {
                 }
             }
             if(check) {
-                System.out.print(" " + i);
+                if(i!=2)
+                    System.out.print(" " );
+                System.out.print(i);
                 m++;
             }
         }
