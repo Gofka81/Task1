@@ -1,7 +1,5 @@
 package com.epam.rd.java.basic.practice1;
 
-import java.util.Arrays;
-
 public class Part7 {
 
     public static void main(String[] args) {
@@ -14,8 +12,6 @@ public class Part7 {
         System.out.println("BA"+arrow+str2int("BA")+ arrow+int2str(str2int("BA")));
         System.out.println("ZZ"+arrow+str2int("ZZ")+ arrow+int2str(str2int("ZZ")));
         System.out.println("AAA"+arrow+str2int("AAA")+ arrow+int2str(str2int("AAA")));
-
-
     }
 
     public static int str2int(String number) {
@@ -46,16 +42,7 @@ public class Part7 {
     }
 
     public static String rightColumn(String number) {
-        char[] chyslo = number.toCharArray();
-        if('@'<chyslo[number.length()-1] && chyslo[number.length()-1]<'Z') {
-            chyslo[number.length() - 1]++;
-        }else {
-            if(chyslo[number.length()-1] == 'Z'){
-                return "AA";
-            }
-            chyslo[number.length() - 1] = 'A';
-            chyslo[number.length() - 2]++;
-        }
-        return Arrays.toString(chyslo);
+        int temp =str2int(number);
+        return int2str(++temp);
     }
 }
