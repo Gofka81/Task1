@@ -21,6 +21,8 @@ public class Demo {
 
         Part6.main(new String[]{"12"});
         System.out.print("\n\n");
+
+        Part7.main(new String[]{"AAA", "1", "A"});
     }
 
 }
